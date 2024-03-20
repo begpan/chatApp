@@ -105,7 +105,12 @@ button {
   max-width: 800px;
   overflow: hidden;
 
-  @media (max-width: 650px) {
+  @media (max-width: 750px) {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  @media (max-height: 750px) {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
@@ -151,6 +156,10 @@ button {
   overflow: auto;
   gap: 10px;
   padding: 10px;
+
+  @media (max-width: 700) {
+    height: 80%;
+  }
 
   &::-webkit-scrollbar {
     background: transparent;
